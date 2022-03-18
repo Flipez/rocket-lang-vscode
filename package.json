@@ -1,0 +1,43 @@
+{
+    "name": "rocketlang-language-support",
+    "publisher": "Flipez",
+    "repository": "https://github.com/flipez/rocket-lang",
+    "displayName": "🚀🇱🅰🆖 Support",
+    "description": "Adds support for RocketLang",
+    "icon": "images/rocket.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "rocket-lang",
+                "aliases": [
+                    "RocketLang",
+                    "rocket-lang"
+                ],
+                "extensions": [
+                    ".rl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "rocket-lang",
+                "scopeName": "source.rocket-lang",
+                "path": "./syntaxes/rocket-lang.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "esbuild": "^0.14.27"
+    },
+    "dependencies": {
+        "vsce": "^2.7.0"
+    }
+}
