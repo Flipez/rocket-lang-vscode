@@ -1,0 +1,40 @@
+{
+	"Print to console": {
+		"prefix": "puts",
+		"body": [
+			"puts('$1');",
+			"$2"
+		],
+		"description": "Print output to console"
+	},
+  "Foreach with index": {
+    "prefix": "foreach",
+    "body": [
+      "foreach idx, element in $1 {",
+      "$2",
+      "end"
+    ]
+  },
+  "Foreach": {
+    "prefix": "foreach",
+    "body": [
+      "foreach element in $1 {",
+      "$2",
+      "end"
+    ]
+  },
+  "Open file": {
+    "prefix": "open",
+    "body": [
+      "file = open(\"$1\")"
+    ]
+  },
+  "HTTP Server": {
+    "prefix": "HTTP",
+    "body": [
+      "http = HTTP.new",
+      "http.handle(\"/\", callbackFunc)",
+      "http.listen(3000)"
+    ]
+  }
+}

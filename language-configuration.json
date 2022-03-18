@@ -9,11 +9,12 @@
         ["(", ")"]
     ],
     "autoClosingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
+      { "open": "{", "close": "}" },
+      { "open": "[", "close": "]" },
+      { "open": "(", "close": ")" },
+      { "open": "'", "close": "'", "notIn": ["string", "comment"] },
+      { "open": "\"", "close": "\"", "notIn": ["string"] },
+      { "open": "/*", "close": " */", "notIn": ["string"] }
     ],
     "surroundingPairs": [
         ["{", "}"],
@@ -21,5 +22,19 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "indentationRules": {
+      "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
+      "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*[\\)\\}\\]].*$"
+    },
+    "onEnterRules": [
+      {
+        "beforeText": "^\\s*(?:def|class|foreach|if|else|while).*?:\\s*$",
+        "action": { "indent": "indent" }
+      },
+      {
+        "beforeText": "^\\s*(?:end).*?$",
+        "action": { "indent": "outdent" }
+      }
+  ]
 }

@@ -72,19 +72,19 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.rocket-lang",
-					"match": "\\b(?:else|foreach|if|import|in|return|while)\\b"
+					"name": "keywords.control.rocket-lang",
+					"match": "\\b(?:end|else|foreach|if|import|in|return|while)\\b"
 				},
 				{
-					"name": "keyword.operator.arithmetic.rocket-lang",
+					"name": "keywords.operator.arithmetic.rocket-lang",
 					"match": "(\\-|\\+|\\*|\/|%)"
 				},
 				{
-					"name": "keyword.operator.comparison.rocket-lang",
+					"name": "keywords.operator.comparison.rocket-lang",
 					"match": "(==|!=|<=|>=|<|>)"
 				},
 				{
-					"name": "keyword.operator.assignment.rocket-lang",
+					"name": "keywords.operator.assignment.rocket-lang",
 					"match": "(=)"
 				}
 			]
