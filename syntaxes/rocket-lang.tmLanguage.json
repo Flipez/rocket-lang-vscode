@@ -16,22 +16,12 @@
 			"name": "keyword.operator.assignment.rocket-lang",
 			"match": "(=)"
 		},
-		"block": {
-			"begin": "{",
-			"beginCaptures": {
-				"0": {
-					"name": "puncuation.section.block.begin.rocket-lang"
-				}
-			},
-			"end": "}",
-			"endCaptures": {
-				"0": {
-					"name": "puncuation.section.block.end.rocket-lang"
-				}
-			}
-		},
 		"constant": {
 			"patterns": [
+				{
+					"name": "constant.language.nil.rocket-lang",
+					"match": "\\b(nil)\\b"
+				},
 				{
 					"name": "constant.language.boolean.rocket-lang",
 					"match": "\\b(true|false)\\b"
@@ -93,7 +83,7 @@
 			"patterns": [
 				{
 					"name": "support.function.rocket-lang",
-					"match": "\\b(puts|HTTP|open)\\b"
+					"match": "\\b(puts|HTTP|open|exit)\\b"
 				}
 			]
 		},

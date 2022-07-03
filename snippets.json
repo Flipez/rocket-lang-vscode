@@ -10,7 +10,7 @@
   "Foreach with index": {
     "prefix": "foreach",
     "body": [
-      "foreach idx, element in $1 {",
+      "foreach idx, element in $1",
       "$2",
       "end"
     ]
@@ -18,7 +18,7 @@
   "Foreach": {
     "prefix": "foreach",
     "body": [
-      "foreach element in $1 {",
+      "foreach element in $1 ",
       "$2",
       "end"
     ]
