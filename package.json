@@ -5,7 +5,7 @@
     "displayName": "🚀🇱🅰🆖 Support",
     "description": "Syntax Highlighting and Snippets for RocketLang",
     "icon": "images/rocket.png",
-    "version": "0.17.1-0",
+    "version": "0.17.1.0",
     "engines": {
         "vscode": "^1.65.0"
     },
