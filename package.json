@@ -4,7 +4,7 @@
     "repository": "https://github.com/flipez/rocket-lang-vscode",
     "displayName": "🚀🇱🅰🆖 Support",
     "description": "Syntax Highlighting and Snippets for RocketLang",
-    "icon": "https://rocket-lang.org/logo.png",
+    "icon": "images/rocket.png",
     "version": "0.17.1-0",
     "engines": {
         "vscode": "^1.65.0"
